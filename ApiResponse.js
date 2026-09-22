@@ -1,4 +1,3 @@
-
 class ApiResponse {
   constructor(statusCode, message = "Success", data = null) {
     this.success = statusCode < 400;
@@ -16,11 +15,6 @@ class ApiResponse {
     second: 'numeric',
     hour12: true 
   });
-  }
-}
-
-export default ApiResponse;
-);
   }
 }
 
