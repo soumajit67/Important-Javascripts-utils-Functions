@@ -71,11 +71,15 @@ const verifyRefreshToken = async (token) => {
 }
 
 
+const decodeToken = async (token) => {
+    return jwt.decode(token);
+}
 
 
 export {
     generateAccessToken,
     verifyAccessToken,
     generateRefreshToken,
-    verifyRefreshToken
+    verifyRefreshToken,
+    decodeToken
 }
